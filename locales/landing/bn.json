@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "এডিটর"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "শুরু"
+  },
+  "hero": {
+    "badge": "গোপনীয়তা",
+    "free_badge": "ফ্রি",
+    "title_1": "ইমেজ",
+    "title_2": "প্রসেসিং",
+    "description": "নিরাপদ।",
+    "cta_start": "শুরু",
+    "cta_more": "আরও",
+    "features": {
+      "compression": "কমপ্রেশন",
+      "resize": "আকার পরিবর্তন",
+      "crop": "ক্রপ",
+      "convert": "রূপান্তর",
+      "batch": "ব্যাচ প্রসেসিং"
+    }
+  },
+  "templates": {
+    "title_prefix": "টুলস",
+    "title_gradient": "",
+    "description": "সব।",
+    "item_1_title": "ক্রপ",
+    "item_1_desc": "স্মার্ট।",
+    "item_2_title": "রোটেশন",
+    "item_2_desc": "নির্ভুল।",
+    "item_3_title": "সাইজ",
+    "item_3_desc": "কোয়ালিটি।"
+  },
+  "privacy": {
+    "title_prefix": "ডেটা",
+    "title_highlight": "আপনার",
+    "title_suffix": "",
+    "description": "লোকাল।",
+    "item_1_title": "নো আপলোড",
+    "item_1_desc": "সেফ।",
+    "item_2_title": "অফলাইন",
+    "item_2_desc": "ফাস্ট।"
+  },
+  "devices": {
+    "title": "সর্বত্র",
+    "subtitle": "অপ্টিমাইজড",
+    "mobile_title": "মোবাইল",
+    "mobile_desc": "টাচ।",
+    "tablet_title": "ট্যাবলেট",
+    "tablet_desc": "পাওয়ার।",
+    "laptop_title": "ডেস্কটপ",
+    "laptop_desc": "কন্ট্রোল।"
+  },
+  "performance": {
+    "title_prefix": "পারফর্মেন্স",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "লেটেন্সি",
+    "export_label": "রেজোলিউশন"
+  },
+  "footer": {
+    "title": "রেডি?",
+    "description": "শুরু।",
+    "cta": "ওপেন",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "ওয়ালপেপার মকআপ জেনারেটর",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/bn/"
+  },
+  "urls": {
+    "app": "/app/?lang=bn"
+  }
+}

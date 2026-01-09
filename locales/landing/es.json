@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - Editor de Imágenes Online Profesional",
+    "description": "Editor de imágenes online seguro, rápido y privado.",
+    "keywords": "editor de imágenes, recortar imagen, redimensionar, compresión de imágenes, procesamiento por lotes, convertidor de formatos, editor en línea, privacidad"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Iniciar App"
+  },
+  "hero": {
+    "badge": "Privacidad Primero",
+    "free_badge": "100% Gratis",
+    "title_1": "Procesamiento",
+    "title_2": "de Imágenes",
+    "description": "Experimenta el poder del procesamiento de imágenes seguro en el cliente. Sin subidas: tus fotos nunca salen de tu dispositivo.",
+    "cta_start": "Comenzar",
+    "cta_more": "Saber Más",
+    "features": {
+      "compression": "Compresión",
+      "resize": "Redimensionar",
+      "crop": "Recortar",
+      "convert": "Convertir",
+      "batch": "Procesamiento por Lotes"
+    }
+  },
+  "templates": {
+    "title_prefix": "Herramientas ",
+    "title_gradient": "Esenciales",
+    "description": "Todo lo que necesitas para perfeccionar tus imágenes.",
+    "item_1_title": "Recorte Inteligente",
+    "item_1_desc": "Bloqueo inteligente de relación de aspecto.",
+    "item_2_title": "Rotación Precisa",
+    "item_2_desc": "Ajuste fino con guías.",
+    "item_3_title": "Redimensionado Instantáneo",
+    "item_3_desc": "Redimensiona tus imágenes manteniendo alta calidad."
+  },
+  "privacy": {
+    "title_prefix": "Tus Datos, ",
+    "title_highlight": "Tu Control",
+    "title_suffix": "",
+    "description": "Creemos en la privacidad por diseño.",
+    "item_1_title": "Sin Subidas al Servidor",
+    "item_1_desc": "Los archivos permanecen en tu dispositivo.",
+    "item_2_title": "Funciona Offline",
+    "item_2_desc": "Funciona sin internet."
+  },
+  "devices": {
+    "title": "Funciona en Todas Partes",
+    "subtitle": "Optimizado para todos tus dispositivos",
+    "mobile_title": "Móvil",
+    "mobile_desc": "Interfaz optimizada.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Potencia de escritorio.",
+    "laptop_title": "Escritorio",
+    "laptop_desc": "Control de precisión."
+  },
+  "performance": {
+    "title_prefix": "Rendimiento ",
+    "title_gradient": "Ultrarrápido",
+    "title_suffix": "",
+    "fps_label": "UI Fluida",
+    "latency_label": "Latencia",
+    "export_label": "Resolución"
+  },
+  "footer": {
+    "title": "¿Listo para Crear?",
+    "description": "Únete a miles de usuarios.",
+    "cta": "Abrir Editor",
+    "copyright": "© 2024 Image Pro.",
+    "attribution_prefix": "Diseñado por",
+    "hosted_on": "Alojado en GitHub",
+    "more_products": "Más Productos",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Generador de Maquetas de Fondos",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/es/"
+  },
+  "urls": {
+    "app": "/app/?lang=es"
+  }
+}

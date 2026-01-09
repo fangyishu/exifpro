@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "Trình sửa ảnh"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Mở"
+  },
+  "hero": {
+    "badge": "Bảo mật",
+    "free_badge": "Miễn phí",
+    "title_1": "Xử lý",
+    "title_2": "Hình ảnh",
+    "description": "An toàn và nhanh chóng.",
+    "cta_start": "Bắt đầu",
+    "cta_more": "Thêm",
+    "features": {
+      "compression": "Nén",
+      "resize": "Đổi kích thước",
+      "crop": "Cắt",
+      "convert": "Chuyển đổi",
+      "batch": "Xử lý hàng loạt"
+    }
+  },
+  "templates": {
+    "title_prefix": "Công cụ",
+    "title_gradient": "",
+    "description": "Đầy đủ.",
+    "item_1_title": "Cắt",
+    "item_1_desc": "Thông minh.",
+    "item_2_title": "Xoay",
+    "item_2_desc": "Chính xác.",
+    "item_3_title": "Kích thước",
+    "item_3_desc": "Chất lượng."
+  },
+  "privacy": {
+    "title_prefix": "Dữ liệu",
+    "title_highlight": "Của bạn",
+    "title_suffix": "",
+    "description": "Cục bộ.",
+    "item_1_title": "Không tải lên",
+    "item_1_desc": "An toàn.",
+    "item_2_title": "Ngoại tuyến",
+    "item_2_desc": "Nhanh."
+  },
+  "devices": {
+    "title": "Mọi nơi",
+    "subtitle": "Tối ưu",
+    "mobile_title": "Di động",
+    "mobile_desc": "Cảm ứng.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Mạnh mẽ.",
+    "laptop_title": "Desktop",
+    "laptop_desc": "Kiểm soát."
+  },
+  "performance": {
+    "title_prefix": "Hiệu suất",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Trễ",
+    "export_label": "Độ phân giải"
+  },
+  "footer": {
+    "title": "Sẵn sàng?",
+    "description": "Bắt đầu.",
+    "cta": "Mở",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Trình Tạo Mockup Hình Nền",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/vi/"
+  },
+  "urls": {
+    "app": "/app/?lang=vi"
+  }
+}

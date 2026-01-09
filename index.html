@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVDYQLCD0L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-86413LJYCV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="%meta.description%">
+    <meta name="keywords" content="%meta.keywords%">
+
+    <!-- SEO: Canonical and Hreflang Tags -->
+    <link rel="canonical" href="https://imagepro.fandx.vip/">
+    <link rel="alternate" hreflang="en" href="https://imagepro.fandx.vip/">
+    <link rel="alternate" hreflang="zh-CN" href="https://imagepro.fandx.vip/zh-CN/">
+    <link rel="alternate" hreflang="zh-HK" href="https://imagepro.fandx.vip/zh-HK/">
+    <link rel="alternate" hreflang="es" href="https://imagepro.fandx.vip/es/">
+    <link rel="alternate" hreflang="ar" href="https://imagepro.fandx.vip/ar/">
+    <link rel="alternate" hreflang="hi" href="https://imagepro.fandx.vip/hi/">
+    <link rel="alternate" hreflang="bn" href="https://imagepro.fandx.vip/bn/">
+    <link rel="alternate" hreflang="pt" href="https://imagepro.fandx.vip/pt/">
+    <link rel="alternate" hreflang="ru" href="https://imagepro.fandx.vip/ru/">
+    <link rel="alternate" hreflang="ja" href="https://imagepro.fandx.vip/ja/">
+    <link rel="alternate" hreflang="pa" href="https://imagepro.fandx.vip/pa/">
+    <link rel="alternate" hreflang="de" href="https://imagepro.fandx.vip/de/">
+    <link rel="alternate" hreflang="fr" href="https://imagepro.fandx.vip/fr/">
+    <link rel="alternate" hreflang="tr" href="https://imagepro.fandx.vip/tr/">
+    <link rel="alternate" hreflang="vi" href="https://imagepro.fandx.vip/vi/">
+    <link rel="alternate" hreflang="ko" href="https://imagepro.fandx.vip/ko/">
+    <link rel="alternate" hreflang="it" href="https://imagepro.fandx.vip/it/">
+    <link rel="alternate" hreflang="th" href="https://imagepro.fandx.vip/th/">
+    <link rel="alternate" hreflang="x-default" href="https://imagepro.fandx.vip/">
+
+    <title>Exif Pro</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        dark: {
+                            bg: '#0f172a',
+                            card: '#1e293b',
+                            text: '#f8fafc',
+                            sub: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", sans - serif],
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #c084fc, #f472b6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.15), transparent 70%),
+                radial-gradient(circle at 0% 0%, rgba(192, 132, 252, 0.1), transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(244, 114, 182, 0.1), transparent 50%);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <img id="nav-logo" src="/logo.png" alt="Logo" class="w-8 h-8">
+                    <span class="text-xl font-bold tracking-tight">%nav.logo_text%</span>
+                </div>
+                <div class="hidden md:flex items-center gap-4">
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 text-white/80 hover:text-white transition-colors p-2"
+                            aria-label="Change Language">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor" class="text-white/90">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.91-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="opacity-50">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute right-0 mt-2 w-48 bg-[#0a0a0a]/90 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50 max-h-[60vh] overflow-y-auto">
+                            <a href="/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">English</a>
+                            <a href="/zh-CN/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">简体中文</a>
+                            <a href="/zh-HK/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">繁體中文</a>
+                            <a href="/es/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Español</a>
+                            <a href="/ar/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors text-right"
+                                dir="rtl">العربية</a>
+                            <a href="/hi/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">हिन्दी</a>
+                            <a href="/bn/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">বাংলা</a>
+                            <a href="/pt/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Português</a>
+                            <a href="/ru/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Русский</a>
+                            <a href="/ja/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">日本語</a>
+                            <a href="/pa/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">ਪੰਜਾਬੀ</a>
+                            <a href="/de/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Deutsch</a>
+                            <a href="/fr/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Français</a>
+                            <a href="/tr/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Türkçe</a>
+                            <a href="/vi/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Tiếng
+                                Việt</a>
+                            <a href="/ko/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">한국어</a>
+                            <a href="/it/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">Italiano</a>
+                            <a href="/th/"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/10 transition-colors">ไทย</a>
+                        </div>
+                    </div>
+
+                    <a href="%urls.app%"
+                        class="px-6 py-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors font-medium text-white shadow-lg shadow-blue-500/30">
+                        %nav.cta%
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-4 pt-20">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 animate-hero-content">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    <span class="text-sm font-medium text-blue-200">%hero.badge%</span>
+                </div>
+                <div
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-emerald-400/50 bg-emerald-500/20 backdrop-blur-md shadow-[0_0_15px_rgba(16,185,129,0.3)] transform hover:scale-105 transition-all duration-300">
+                    <span
+                        class="text-base font-extrabold text-emerald-300 tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">%hero.free_badge%</span>
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 leading-tight">
+                <span class="block text-white mb-2 overflow-hidden"><span
+                        class="block animate-hero-content">%hero.title_1%</span></span>
+                <span class="block overflow-hidden pb-2"><span class="block animate-hero-content text-gradient"
+                        style="-webkit-text-fill-color: transparent;">%hero.title_2%</span></span>
+            </h1>
+
+            <p class="mt-8 max-w-2xl mx-auto text-lg md:text-xl text-dark-sub leading-relaxed animate-hero-content">
+                %hero.description%
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="mt-8 flex flex-wrap justify-center gap-3 animate-hero-content px-4">
+                <span
+                    class="px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-300 backdrop-blur-sm shadow-[0_0_10px_rgba(59,130,246,0.1)]">
+                    %hero.features.compression%
+                </span>
+                <span
+                    class="px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-sm font-medium text-purple-300 backdrop-blur-sm shadow-[0_0_10px_rgba(168,85,247,0.1)]">
+                    %hero.features.resize%
+                </span>
+                <span
+                    class="px-3 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-sm font-medium text-pink-300 backdrop-blur-sm shadow-[0_0_10px_rgba(236,72,153,0.1)]">
+                    %hero.features.crop%
+                </span>
+                <span
+                    class="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-sm font-medium text-emerald-300 backdrop-blur-sm shadow-[0_0_10px_rgba(16,185,129,0.1)]">
+                    %hero.features.convert%
+                </span>
+                <span
+                    class="px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-sm font-medium text-amber-300 backdrop-blur-sm shadow-[0_0_10px_rgba(245,158,11,0.1)]">
+                    %hero.features.batch%
+                </span>
+            </div>
+
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center animate-hero-content">
+                <a href="%urls.app%"
+                    class="px-8 py-4 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors font-bold text-white shadow-lg shadow-blue-500/30">
+                    %hero.cta_start%
+                </a>
+                <a href="#features"
+                    class="px-8 py-4 rounded-full glass-card hover:bg-white/10 transition-colors font-medium border border-white/10">
+                    %hero.cta_more%
+                </a>
+            </div>
+
+            <!-- Mockup Preview Container (Abstract) -->
+            <div class="mt-20 relative mx-auto max-w-4xl h-64 md:h-80 animate-hero-content"
+                style="perspective: 1000px;">
+                <div
+                    class="absolute left-1/2 top-0 -translate-x-1/2 w-full h-full flex justify-center items-end gap-4 md:gap-8 transform-style-3d rotate-x-12">
+                    <div
+                        class="w-full md:w-[800px] h-48 md:h-64 bg-gray-900 rounded-t-xl border-t-4 border-l-4 border-r-4 border-gray-700 shadow-2xl z-20 flex items-center justify-center overflow-hidden">
+                        <!-- Simple UI Mockup -->
+                        <div class="w-full h-full bg-dark-bg relative">
+                            <!-- Header -->
+                            <div class="h-12 border-b border-white/10 flex items-center px-4 gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <!-- Body -->
+                            <div class="flex h-[calc(100%-3rem)]">
+                                <div class="w-16 border-r border-white/10 hidden md:block"></div> <!-- Left toolbar -->
+                                <div class="flex-1 flex items-center justify-center p-4">
+                                    <div
+                                        class="w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg">
+                                    </div>
+                                </div>
+                                <div class="w-48 border-l border-white/10 hidden md:block"></div> <!-- Right panel -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section (Renamed to Features for ImagePro) -->
+    <section class="py-16 md:py-24 lg:py-32 bg-dark-bg relative overflow-hidden" id="features">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="opacity-0 animate-on-scroll transform translate-x-[-50px]" data-delay="0.2">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">%templates.title_prefix%<span
+                            class="text-gradient">%templates.title_gradient%</span></h2>
+                    <p class="text-base md:text-lg text-dark-sub mb-8 leading-relaxed">
+                        %templates.description%
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-purple-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-white mb-2">%templates.item_1_title%</h3>
+                                <p class="text-sm md:text-base text-dark-sub">%templates.item_1_desc%</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-pink-500/10 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-pink-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-white mb-2">%templates.item_2_title%</h3>
+                                <p class="text-sm md:text-base text-dark-sub">%templates.item_2_desc%</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-white mb-2">%templates.item_3_title%</h3>
+                                <p class="text-sm md:text-base text-dark-sub">%templates.item_3_desc%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Visual Representation (Abstract) -->
+                <div class="opacity-0 animate-on-scroll transform translate-x-[50px] relative mt-12 md:mt-0"
+                    data-delay="0.4">
+                    <div class="aspect-square relative flex items-center justify-center">
+                        <div class="absolute inset-0 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                        <!-- Abstract layered visual -->
+                        <div
+                            class="relative w-64 h-64 md:w-80 md:h-80 glass-card rounded-3xl border border-white/5 p-4 transform rotate-3 hover:rotate-0 transition-transform duration-700">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center">
+                                <div class="w-3/4 h-3/4 border-2 border-dashed border-white/20 rounded-xl relative">
+                                    <!-- Corner handles -->
+                                    <div
+                                        class="absolute -top-2 -left-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white">
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-2 -left-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white">
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-2 -right-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="py-16 md:py-32 bg-dark-bg relative overflow-hidden" id="privacy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="opacity-0 animate-on-scroll transform translate-x-[-50px] order-2 md:order-1"
+                    data-delay="0.2">
+                    <div class="relative w-full aspect-square max-w-md mx-auto">
+                        <div class="absolute inset-0 bg-green-500/20 rounded-full blur-3xl animate-pulse"></div>
+                        <div
+                            class="relative z-10 w-full h-full glass-card rounded-3xl flex items-center justify-center border border-white/10">
+                            <svg class="w-20 h-20 md:w-32 md:h-32 text-green-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="opacity-0 animate-on-scroll transform translate-x-[50px] mt-8 md:mt-0 order-1 md:order-2"
+                    data-delay="0.4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">%privacy.title_prefix%<span
+                            class="text-blue-400">%privacy.title_highlight%</span>%privacy.title_suffix%</h2>
+                    <p class="text-base md:text-lg text-dark-sub mb-8 leading-relaxed">
+                        %privacy.description%
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                                <svg class="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-lg">%privacy.item_1_title%</h3>
+                                <p class="text-sm text-dark-sub mt-1">%privacy.item_1_desc%</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="mt-1 w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
+                                <svg class="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-lg">%privacy.item_2_title%</h3>
+                                <p class="text-sm text-dark-sub mt-1">%privacy.item_2_desc%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="py-16 md:py-32 bg-dark-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div
+                class="glass-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 text-center border border-white/5 overflow-hidden relative">
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-blue-500/10 rounded-full blur-[60px] md:blur-[100px]">
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 relative z-10">%performance.title_prefix%<span
+                        class="text-gradient"
+                        style="-webkit-text-fill-color: transparent;">%performance.title_gradient%</span>%performance.title_suffix%
+                </h2>
+
+                <div
+                    class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center relative z-10 pt-4 md:pt-8">
+                    <div class="opacity-0 animate-on-scroll translate-y-[20px]" data-delay="0.1">
+                        <div class="text-3xl md:text-4xl font-black text-white mb-2">60+<span
+                                class="text-xs md:text-sm font-normal text-dark-sub align-top ml-1">fps</span></div>
+                        <div class="text-xs md:text-sm text-dark-sub uppercase tracking-wider font-medium">
+                            %performance.fps_label%
+                        </div>
+                    </div>
+                    <div class="opacity-0 animate-on-scroll translate-y-[20px]" data-delay="0.3">
+                        <div class="text-3xl md:text-4xl font-black text-white mb-2">0<span
+                                class="text-xs md:text-sm font-normal text-dark-sub align-top ml-1">ms</span></div>
+                        <div class="text-xs md:text-sm text-dark-sub uppercase tracking-wider font-medium">
+                            %performance.latency_label%</div>
+                    </div>
+                    <div class="opacity-0 animate-on-scroll translate-y-[20px]" data-delay="0.5">
+                        <div class="text-3xl md:text-4xl font-black text-white mb-2">4K<span
+                                class="text-xs md:text-sm font-normal text-dark-sub align-top ml-1">+</span></div>
+                        <div class="text-xs md:text-sm text-dark-sub uppercase tracking-wider font-medium">
+                            %performance.export_label%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 md:py-20 bg-dark-bg border-t border-white/5 text-center relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-6xl font-black mb-6 md:mb-8 tracking-tight">%footer.title%</h2>
+            <p class="text-base md:text-xl text-dark-sub mb-8 md:mb-10 max-w-2xl mx-auto">
+                %footer.description%
+            </p>
+
+            <div class="flex justify-center gap-4 mb-12 animate-on-scroll translate-y-[20px]" data-delay="0.1">
+                <a href="%urls.app%"
+                    class="px-8 py-4 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors font-bold text-white shadow-lg shadow-blue-500/30">
+                    %footer.cta%
+                </a>
+            </div>
+
+            <!-- More Products -->
+            <div class="mb-12 pt-8 border-t border-white/5 animate-on-scroll translate-y-[20px]" data-delay="0.2">
+                <h3 class="text-sm font-semibold text-dark-sub uppercase tracking-wider mb-6">%footer.more_products%
+                </h3>
+                <a href="%footer.cross_link_url%" target="_blank" class="block max-w-sm mx-auto group">
+                    <div
+                        class="glass-card p-4 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition-all duration-300 border border-white/5 hover:border-blue-500/30">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500/20 transition-colors">
+                            <img src="/wallpaperpro-logo.png" alt="Logo" class="w-8 h-8 object-contain">
+                        </div>
+                        <div class="text-left">
+                            <h4 class="text-white font-bold group-hover:text-blue-400 transition-colors">
+                                %footer.cross_link_title%</h4>
+                            <p class="text-xs text-dark-sub mt-0.5">%footer.cross_link_desc%</p>
+                        </div>
+                        <div class="ml-auto text-dark-sub group-hover:text-blue-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="mt-12 md:mt-20 pt-8 md:pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-dark-sub w-full">
+                <p>%footer.copyright%</p>
+
+                <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center mt-4 md:mt-0">
+                    <p class="flex items-center gap-1.5 opacity-80">
+                        <span>%footer.attribution_prefix%</span>
+                        <span class="text-blue-400 font-medium">Antigravity</span>
+                        <span>&</span>
+                        <span class="text-blue-400 font-medium">Gemini</span>
+                    </p>
+                    <span class="hidden md:inline text-white/20">|</span>
+                    <p class="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+                        <span>%footer.hosted_on%</span>
+                        <a href="#" class="text-white hover:text-blue-400 transition-colors flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            %footer.hosted_on% Pages
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+        animateElements.forEach((el) => {
+            const delay = el.getAttribute('data-delay') || 0;
+
+            gsap.to(el, {
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                delay: parseFloat(delay),
+                ease: "power3.out"
+            });
+        });
+
+        window.onload = () => {
+            const heroElements = document.querySelectorAll('.animate-hero-content');
+            heroElements.forEach((el, index) => {
+                gsap.from(el, {
+                    opacity: 0,
+                    y: 30,
+                    duration: 1,
+                    delay: index * 0.2,
+                    ease: "power3.out"
+                });
+            });
+        };
+
+        const container = document.querySelector('.transform-style-3d');
+        if (container) {
+            document.addEventListener('mousemove', (e) => {
+                const xIn = (e.clientX / window.innerWidth - 0.5) * 20;
+                const yIn = (e.clientY / window.innerHeight - 0.5) * 20;
+
+                gsap.to(container, {
+                    rotationY: xIn,
+                    rotationX: -yIn + 12,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-dark-bg/80', 'backdrop-blur-md', 'shadow-lg');
+            } else {
+                nav.classList.remove('bg-dark-bg/80', 'backdrop-blur-md', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+
+</html>

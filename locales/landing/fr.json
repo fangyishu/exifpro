@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - Éditeur d'Image en Ligne Professionnel",
+    "description": "Éditeur d'image en ligne sécurisé.",
+    "keywords": "éditeur d'image, recadrer, redimensionner, compression d'images, traitement par lot, convertisseur de formats, confidentialité"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Lancer l'App"
+  },
+  "hero": {
+    "badge": "Confidentialité d'Abord",
+    "free_badge": "100% Gratuit",
+    "title_1": "Traitement",
+    "title_2": "d'Image Pro",
+    "description": "Découvrez la puissance du traitement d'image sécurisé côté client.",
+    "cta_start": "Commencer",
+    "cta_more": "En Savoir Plus",
+    "features": {
+      "compression": "Compression",
+      "resize": "Redimensionner",
+      "crop": "Recadrer",
+      "convert": "Convertir",
+      "batch": "Traitement par Lot"
+    }
+  },
+  "templates": {
+    "title_prefix": "Outils ",
+    "title_gradient": "Essentiels",
+    "description": "Tout ce dont vous avez besoin.",
+    "item_1_title": "Recadrage Intelligent",
+    "item_1_desc": "Verrouillage intelligent.",
+    "item_2_title": "Rotation Précise",
+    "item_2_desc": "Ajustement fin.",
+    "item_3_title": "Redimensionnement",
+    "item_3_desc": "Haute qualité."
+  },
+  "privacy": {
+    "title_prefix": "Vos Données, ",
+    "title_highlight": "Votre Contrôle",
+    "title_suffix": "",
+    "description": "Nous croyons en la confidentialité.",
+    "item_1_title": "Aucun Téléchargement",
+    "item_1_desc": "Fichiers locaux.",
+    "item_2_title": "Hors ligne",
+    "item_2_desc": "Rapide et fiable."
+  },
+  "devices": {
+    "title": "Partout",
+    "subtitle": "Optimisé partout",
+    "mobile_title": "Mobile",
+    "mobile_desc": "Tactile.",
+    "tablet_title": "Tablette",
+    "tablet_desc": "Puissance.",
+    "laptop_title": "Bureau",
+    "laptop_desc": "Précision."
+  },
+  "performance": {
+    "title_prefix": "Performance ",
+    "title_gradient": "Éclair",
+    "title_suffix": "",
+    "fps_label": "UI Fluide",
+    "latency_label": "Latence",
+    "export_label": "Résolution"
+  },
+  "footer": {
+    "title": "Prêt ?",
+    "description": "Rejoignez-nous.",
+    "cta": "Ouvrir",
+    "copyright": "© 2024 Image Pro.",
+    "attribution_prefix": "Conçu par",
+    "hosted_on": "GitHub",
+    "more_products": "Plus de Produits",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Générateur de Maquettes de Fond d'Écran",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/fr/"
+  },
+  "urls": {
+    "app": "/app/?lang=fr"
+  }
+}

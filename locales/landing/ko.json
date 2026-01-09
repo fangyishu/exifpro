@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "편집기."
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "실행"
+  },
+  "hero": {
+    "badge": "보안",
+    "free_badge": "무료",
+    "title_1": "이미지",
+    "title_2": "처리",
+    "description": "빠르고 안전합니다.",
+    "cta_start": "시작",
+    "cta_more": "정보",
+    "features": {
+      "compression": "압축",
+      "resize": "크기 조정",
+      "crop": "자르기",
+      "convert": "변환",
+      "batch": "일괄 처리"
+    }
+  },
+  "templates": {
+    "title_prefix": "필수",
+    "title_gradient": "도구",
+    "description": "모든 기능.",
+    "item_1_title": "자르기",
+    "item_1_desc": "스마트.",
+    "item_2_title": "회전",
+    "item_2_desc": "정밀.",
+    "item_3_title": "크기",
+    "item_3_desc": "고품질."
+  },
+  "privacy": {
+    "title_prefix": "데이터",
+    "title_highlight": "보호",
+    "title_suffix": "",
+    "description": "로컬.",
+    "item_1_title": "업로드 없음",
+    "item_1_desc": "안전.",
+    "item_2_title": "오프라인",
+    "item_2_desc": "빠름."
+  },
+  "devices": {
+    "title": "어디서나",
+    "subtitle": "최적화",
+    "mobile_title": "모바일",
+    "mobile_desc": "터치.",
+    "tablet_title": "태블릿",
+    "tablet_desc": "파워.",
+    "laptop_title": "데스크탑",
+    "laptop_desc": "제어."
+  },
+  "performance": {
+    "title_prefix": "성능",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "지연",
+    "export_label": "해상도"
+  },
+  "footer": {
+    "title": "준비?",
+    "description": "시작하세요.",
+    "cta": "열기",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "더 많은 제품",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "배경화면 목업 생성기",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/ko/"
+  },
+  "urls": {
+    "app": "/app/?lang=ko"
+  }
+}

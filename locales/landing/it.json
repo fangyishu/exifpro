@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "Editor sicuro."
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Avvia"
+  },
+  "hero": {
+    "badge": "Privacy",
+    "free_badge": "Gratis",
+    "title_1": "Elaborazione",
+    "title_2": "Immagini",
+    "description": "Sicuro e veloce.",
+    "cta_start": "Inizia",
+    "cta_more": "Info",
+    "features": {
+      "compression": "Compressione",
+      "resize": "Ridimensiona",
+      "crop": "Ritaglia",
+      "convert": "Converti",
+      "batch": "Elaborazione Batch"
+    }
+  },
+  "templates": {
+    "title_prefix": "Strumenti",
+    "title_gradient": "Essenziali",
+    "description": "Tutto incluso.",
+    "item_1_title": "Ritaglio",
+    "item_1_desc": "Smart.",
+    "item_2_title": "Rotazione",
+    "item_2_desc": "Preciso.",
+    "item_3_title": "Ridimensiona",
+    "item_3_desc": "Qualità."
+  },
+  "privacy": {
+    "title_prefix": "Tuoi Dati",
+    "title_highlight": "Tuo Controllo",
+    "title_suffix": "",
+    "description": "Locale.",
+    "item_1_title": "No Upload",
+    "item_1_desc": "Sicuro.",
+    "item_2_title": "Offline",
+    "item_2_desc": "Veloce."
+  },
+  "devices": {
+    "title": "Ovunque",
+    "subtitle": "Otimizzato",
+    "mobile_title": "Mobile",
+    "mobile_desc": "Touch.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Power.",
+    "laptop_title": "Desktop",
+    "laptop_desc": "Controllo."
+  },
+  "performance": {
+    "title_prefix": "Veloce",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Latenza",
+    "export_label": "Pixel"
+  },
+  "footer": {
+    "title": "Pronto?",
+    "description": "Inizia ora.",
+    "cta": "Apri",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "Altri Prodotti",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Generatore di Mockup Sfondi",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/it/"
+  },
+  "urls": {
+    "app": "/app/?lang=it"
+  }
+}

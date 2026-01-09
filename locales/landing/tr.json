@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "Editör"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Başlat"
+  },
+  "hero": {
+    "badge": "Gizlilik",
+    "free_badge": "Ücretsiz",
+    "title_1": "Resim",
+    "title_2": "İşleme",
+    "description": "Güvenli ve hızlı.",
+    "cta_start": "Başla",
+    "cta_more": "Bilgi",
+    "features": {
+      "compression": "Sıkıştırma",
+      "resize": "Boyutlandır",
+      "crop": "Kırp",
+      "convert": "Dönüştür",
+      "batch": "Toplu İşlem"
+    }
+  },
+  "templates": {
+    "title_prefix": "Araçlar",
+    "title_gradient": "",
+    "description": "Her şey.",
+    "item_1_title": "Kırpma",
+    "item_1_desc": "Akıllı.",
+    "item_2_title": "Döndürme",
+    "item_2_desc": "Hassas.",
+    "item_3_title": "Boyut",
+    "item_3_desc": "Kalite."
+  },
+  "privacy": {
+    "title_prefix": "Veri",
+    "title_highlight": "Sizin",
+    "title_suffix": "",
+    "description": "Yerel.",
+    "item_1_title": "Yükleme Yok",
+    "item_1_desc": "Güvenli.",
+    "item_2_title": "Çevrimdışı",
+    "item_2_desc": "Hızlı."
+  },
+  "devices": {
+    "title": "Her Yerde",
+    "subtitle": "Optimize",
+    "mobile_title": "Mobil",
+    "mobile_desc": "Dokunmatik.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Güçlü.",
+    "laptop_title": "Masaüstü",
+    "laptop_desc": "Kontrol."
+  },
+  "performance": {
+    "title_prefix": "Hız",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Gecikme",
+    "export_label": "Çözünürlük"
+  },
+  "footer": {
+    "title": "Hazır?",
+    "description": "Başlayın.",
+    "cta": "Aç",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Duvar Kağıdı Mockup Oluşturucu",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/tr/"
+  },
+  "urls": {
+    "app": "/app/?lang=tr"
+  }
+}

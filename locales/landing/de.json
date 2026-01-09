@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - Professioneller Online-Bildeditor",
+    "description": "Sicherer Online-Bildeditor.",
+    "keywords": "Bildeditor, Bild zuschneiden, Größe ändern, Bildkomprimierung, Stapelverarbeitung, Format-Konverter, Datenschutz"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "App Starten"
+  },
+  "hero": {
+    "badge": "Privatsphäre Zuerst",
+    "free_badge": "100% Kostenlos",
+    "title_1": "Professionelle",
+    "title_2": "Bildverarbeitung",
+    "description": "Sichere bildverarbeitung im Client.",
+    "cta_start": "Starten",
+    "cta_more": "Mehr",
+    "features": {
+      "compression": "Komprimierung",
+      "resize": "Größe ändern",
+      "crop": "Zuschneiden",
+      "convert": "Konvertieren",
+      "batch": "Stapelverarbeitung"
+    }
+  },
+  "templates": {
+    "title_prefix": "Wesentliche ",
+    "title_gradient": "Werkzeuge",
+    "description": "Alles was Sie brauchen.",
+    "item_1_title": "Zuschneiden",
+    "item_1_desc": "Intelligent.",
+    "item_2_title": "Rotation",
+    "item_2_desc": "Präzise.",
+    "item_3_title": "Skalieren",
+    "item_3_desc": "Qualität."
+  },
+  "privacy": {
+    "title_prefix": "Ihre Daten, ",
+    "title_highlight": "Ihre Kontrolle",
+    "title_suffix": "",
+    "description": "Privacy by Design.",
+    "item_1_title": "Keine Uploads",
+    "item_1_desc": "Lokal.",
+    "item_2_title": "Offline",
+    "item_2_desc": "Schnell."
+  },
+  "devices": {
+    "title": "Überall",
+    "subtitle": "Optimiert",
+    "mobile_title": "Mobil",
+    "mobile_desc": "Touch.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Power.",
+    "laptop_title": "Desktop",
+    "laptop_desc": "Kontrolle."
+  },
+  "performance": {
+    "title_prefix": "Schnelle ",
+    "title_gradient": "Leistung",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Latenz",
+    "export_label": "Auflösung"
+  },
+  "footer": {
+    "title": "Bereit?",
+    "description": "Starten Sie jetzt.",
+    "cta": "Öffnen",
+    "copyright": "© 2024 Image Pro.",
+    "attribution_prefix": "Design",
+    "hosted_on": "GitHub",
+    "more_products": "Mehr Produkte",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Hintergrundbild-Mockup-Generator",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/de/"
+  },
+  "urls": {
+    "app": "/app/?lang=de"
+  }
+}

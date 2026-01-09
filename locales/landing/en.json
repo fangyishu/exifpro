@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - Professional Online Image Editor",
+    "description": "Secure, fast, and private online image editor. Crop, rotate, and resize images directly in your browser without uploading to any server.",
+    "keywords": "image editor, crop image, resize image, image compression, batch image processing, format converter, online photo editor, privacy first, client-side editor"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Launch App"
+  },
+  "hero": {
+    "badge": "Privacy First",
+    "free_badge": "100% Free",
+    "title_1": "Professional",
+    "title_2": "Image Processing",
+    "description": "Experience the power of secure, client-side image processing. No uploads needed—your photos never leave your device.",
+    "cta_start": "Start Editing",
+    "cta_more": "Learn More",
+    "features": {
+      "compression": "Compression",
+      "resize": "Resize",
+      "crop": "Crop",
+      "convert": "Convert",
+      "batch": "Batch Processing"
+    }
+  },
+  "templates": {
+    "title_prefix": "Essential ",
+    "title_gradient": "Tools",
+    "description": "Everything you need to perfect your images, built for speed and privacy.",
+    "item_1_title": "Smart Crop",
+    "item_1_desc": "Intelligent aspect ratio locking and centered cropping for perfect compositions.",
+    "item_2_title": "Precise Rotation",
+    "item_2_desc": "Fine-tune alignment with grid overlays and smooth 360-degree rotation.",
+    "item_3_title": "Instant Resize",
+    "item_3_desc": "Resize your images while maintaining high quality and sharp details."
+  },
+  "privacy": {
+    "title_prefix": "Your Data, ",
+    "title_highlight": "Your Control",
+    "title_suffix": "",
+    "description": "We believe in privacy by design. Image Pro processes all your photos locally in your browser using advanced WebAssembly and Canvas technologies.",
+    "item_1_title": "No Server Uploads",
+    "item_1_desc": "Files remain on your device. Zero risk of data leaks.",
+    "item_2_title": "Offline Capable",
+    "item_2_desc": "Works without internet once loaded. Fast and reliable."
+  },
+  "devices": {
+    "title": "Works Everywhere",
+    "subtitle": "Optimized for all your devices",
+    "mobile_title": "Mobile",
+    "mobile_desc": "Touch-optimized interface for on-the-go editing.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Desktop-class power with touch convenience.",
+    "laptop_title": "Desktop",
+    "laptop_desc": "Full keyboard shortcuts and precision control."
+  },
+  "performance": {
+    "title_prefix": "Blazing ",
+    "title_gradient": "Fast",
+    "title_suffix": " Performance",
+    "fps_label": "Smooth UI",
+    "latency_label": "Upload Latency",
+    "export_label": "Resolution Support"
+  },
+  "footer": {
+    "title": "Ready to Create?",
+    "description": "Join thousands of users who trust Image Pro for their daily image editing tasks.",
+    "cta": "Open Editor",
+    "copyright": "© 2024 Image Pro. All rights reserved.",
+    "attribution_prefix": "Designed by",
+    "hosted_on": "Hosted on GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Wallpaper Mockup Generator",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/"
+  },
+  "urls": {
+    "app": "/app/?lang=en"
+  }
+}

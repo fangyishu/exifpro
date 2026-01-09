@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "Редактор."
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Запуск"
+  },
+  "hero": {
+    "badge": "Приватность",
+    "free_badge": "Бесплатно",
+    "title_1": "Обработка",
+    "title_2": "Изображений",
+    "description": "Быстро и безопасно.",
+    "cta_start": "Начать",
+    "cta_more": "Инфо",
+    "features": {
+      "compression": "Сжатие",
+      "resize": "Изменить размер",
+      "crop": "Обрезать",
+      "convert": "Конвертировать",
+      "batch": "Пакетная Обработка"
+    }
+  },
+  "templates": {
+    "title_prefix": "Важные",
+    "title_gradient": "Инструменты",
+    "description": "Все что нужно.",
+    "item_1_title": "Обрезка",
+    "item_1_desc": "Умная.",
+    "item_2_title": "Вращение",
+    "item_2_desc": "Точное.",
+    "item_3_title": "Размер",
+    "item_3_desc": "Качество."
+  },
+  "privacy": {
+    "title_prefix": "Данные",
+    "title_highlight": "Ваши",
+    "title_suffix": "",
+    "description": "Локально.",
+    "item_1_title": "Без Серверов",
+    "item_1_desc": "Безопасно.",
+    "item_2_title": "Офлайн",
+    "item_2_desc": "Быстро."
+  },
+  "devices": {
+    "title": "Везде",
+    "subtitle": "Оптимизация",
+    "mobile_title": "Мобильные",
+    "mobile_desc": "Тач.",
+    "tablet_title": "Планшеты",
+    "tablet_desc": "Мощь.",
+    "laptop_title": "ПК",
+    "laptop_desc": "Контроль."
+  },
+  "performance": {
+    "title_prefix": "Скорость",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Пинг",
+    "export_label": "Разрешение"
+  },
+  "footer": {
+    "title": "Готовы?",
+    "description": "Вперед.",
+    "cta": "Открыть",
+    "copyright": "© 2024",
+    "attribution_prefix": "Дизайн",
+    "hosted_on": "GitHub",
+    "more_products": "Другие Продукты",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Генератор Мокапов Обоев",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/ru/"
+  },
+  "urls": {
+    "app": "/app/?lang=ru"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - 专业在线图片编辑器",
+    "description": "安全、快速、隐私的在线图片编辑器。无需上传，直接在浏览器中裁剪、旋转和调整图片大小。",
+    "keywords": "图片编辑, 裁剪图片, 调整尺寸, 图片压缩, 批量处理, 格式转换, 在线修图, 隐私保护, 客户端编辑器"
+  },
+  "nav": {
+    "logo_text": "图片大师",
+    "cta": "启动应用"
+  },
+  "hero": {
+    "badge": "隐私优先",
+    "free_badge": "完全免费",
+    "title_1": "专业级",
+    "title_2": "图片处理",
+    "description": "体验安全可靠的客户端图片处理技术。无需上传服务器，您的照片永远不会离开您的设备。",
+    "cta_start": "开始编辑",
+    "cta_more": "了解更多",
+    "features": {
+      "compression": "图片压缩",
+      "resize": "调整尺寸",
+      "crop": "图片裁剪",
+      "convert": "格式转换",
+      "batch": "批量处理"
+    }
+  },
+  "templates": {
+    "title_prefix": "核心",
+    "title_gradient": "功能",
+    "description": "为您提供修饰图片所需的一切，专为速度和隐私打造。",
+    "item_1_title": "智能裁剪",
+    "item_1_desc": "智能比例锁定和居中裁剪，轻松获得完美构图。",
+    "item_2_title": "精准旋转",
+    "item_2_desc": "通过网格辅助和平滑的360度旋转微调角度。",
+    "item_3_title": "即时调整",
+    "item_3_desc": "在保持高质量和清晰细节的同时调整图片大小。"
+  },
+  "privacy": {
+    "title_prefix": "您的数据，",
+    "title_highlight": "由您掌控",
+    "title_suffix": "",
+    "description": "我们坚信隐私至上。Image Pro 使用先进的 WebAssembly 和 Canvas 技术，在您的浏览器中本地处理所有照片。",
+    "item_1_title": "无需上传",
+    "item_1_desc": "文件保留在设备上，零数据泄露风险。",
+    "item_2_title": "离线可用",
+    "item_2_desc": "加载后无网也能使用，快速且可靠。"
+  },
+  "devices": {
+    "title": "全平台支持",
+    "subtitle": "为您所有的设备进行了优化",
+    "mobile_title": "手机",
+    "mobile_desc": "专为触控优化的界面，随时随地修图。",
+    "tablet_title": "平板",
+    "tablet_desc": "兼具桌面级的强大功能和触控的便捷。",
+    "laptop_title": "桌面",
+    "laptop_desc": "支持全键盘快捷键和精密控制。"
+  },
+  "performance": {
+    "title_prefix": "极致",
+    "title_gradient": "性能",
+    "title_suffix": "表现",
+    "fps_label": "流畅 UI",
+    "latency_label": "上传延迟",
+    "export_label": "分辨率支持"
+  },
+  "footer": {
+    "title": "准备好开始了吗？",
+    "description": "加入成千上万信任 Image Pro 的用户，高效完成日常修图任务。",
+    "cta": "打开编辑器",
+    "copyright": "© 2024 Image Pro. 保留所有权利。",
+    "attribution_prefix": "设计方",
+    "hosted_on": "托管于 GitHub",
+    "more_products": "更多产品",
+    "cross_link_title": "壁纸大师",
+    "cross_link_desc": "壁纸样机生成器",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/zh-CN/"
+  },
+  "urls": {
+    "app": "/app/?lang=zh-CN"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "محرر."
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "بدء"
+  },
+  "hero": {
+    "badge": "خصوصية",
+    "free_badge": "مجاني",
+    "title_1": "معالجة",
+    "title_2": "الصور",
+    "description": "سريع وآمن.",
+    "cta_start": "ابدأ",
+    "cta_more": "المزيد",
+    "features": {
+      "compression": "ضغط",
+      "resize": "تغيير الحجم",
+      "crop": "قص",
+      "convert": "تحويل",
+      "batch": "معالجة مجمعة"
+    }
+  },
+  "templates": {
+    "title_prefix": "أدوات",
+    "title_gradient": "أساسية",
+    "description": "كل شيء.",
+    "item_1_title": "قص",
+    "item_1_desc": "ذكي.",
+    "item_2_title": "تدوير",
+    "item_2_desc": "دقيق.",
+    "item_3_title": "حجم",
+    "item_3_desc": "جودة."
+  },
+  "privacy": {
+    "title_prefix": "بياناتك",
+    "title_highlight": "لك",
+    "title_suffix": "",
+    "description": "محلي.",
+    "item_1_title": "لا تحميل",
+    "item_1_desc": "آمن.",
+    "item_2_title": "دون اتصال",
+    "item_2_desc": "سريع."
+  },
+  "devices": {
+    "title": "كل مكان",
+    "subtitle": "محسن",
+    "mobile_title": "جوال",
+    "mobile_desc": "لمس.",
+    "tablet_title": "لوحي",
+    "tablet_desc": "قوة.",
+    "laptop_title": "مكتب",
+    "laptop_desc": "تحكم."
+  },
+  "performance": {
+    "title_prefix": "أداء",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "تأخير",
+    "export_label": "دقة"
+  },
+  "footer": {
+    "title": "جاهز؟",
+    "description": "ابدأ.",
+    "cta": "فتح",
+    "copyright": "© 2024",
+    "attribution_prefix": "تصميم",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "مولد نماذج الخلفيات",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/ar/"
+  },
+  "urls": {
+    "app": "/app/?lang=ar"
+  }
+}

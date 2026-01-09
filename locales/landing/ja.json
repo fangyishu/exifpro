@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - プロフェッショナルオンライン画像エディタ",
+    "description": "安全、高速、プライベート。",
+    "keywords": "画像エディタ, トリミング, リサイズ, 画像圧縮, 一括処理, 形式変換, プライバシー"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "アプリを起動"
+  },
+  "hero": {
+    "badge": "プライバシー重視",
+    "free_badge": "100% 無料",
+    "title_1": "プロフェッショナル",
+    "title_2": "画像処理",
+    "description": "安全なクライアントサイド画像処理。",
+    "cta_start": "編集を開始",
+    "cta_more": "詳細",
+    "features": {
+      "compression": "圧縮",
+      "resize": "リサイズ",
+      "crop": "トリミング",
+      "convert": "変換",
+      "batch": "一括処理"
+    }
+  },
+  "templates": {
+    "title_prefix": "必須 ",
+    "title_gradient": "ツール",
+    "description": "必要なすべて。",
+    "item_1_title": "トリミング",
+    "item_1_desc": "スマート。",
+    "item_2_title": "回転",
+    "item_2_desc": "精密。",
+    "item_3_title": "リサイズ",
+    "item_3_desc": "高品質。"
+  },
+  "privacy": {
+    "title_prefix": "データは",
+    "title_highlight": "あなたのもの",
+    "title_suffix": "",
+    "description": "プライバシー重視。",
+    "item_1_title": "アップロードなし",
+    "item_1_desc": "ローカル処理。",
+    "item_2_title": "オフライン",
+    "item_2_desc": "高速。"
+  },
+  "devices": {
+    "title": "どこでも",
+    "subtitle": "最適化済み",
+    "mobile_title": "モバイル",
+    "mobile_desc": "タッチ。",
+    "tablet_title": "タブレット",
+    "tablet_desc": "パワー。",
+    "laptop_title": "デスクトップ",
+    "laptop_desc": "制御。"
+  },
+  "performance": {
+    "title_prefix": "爆速 ",
+    "title_gradient": "パフォーマンス",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "遅延",
+    "export_label": "解像度"
+  },
+  "footer": {
+    "title": "準備完了？",
+    "description": "今すぐ開始。",
+    "cta": "開く",
+    "copyright": "© 2024 Image Pro.",
+    "attribution_prefix": "Design",
+    "hosted_on": "GitHub",
+    "more_products": "その他の製品",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "壁紙モックアップジェネレーター",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/ja/"
+  },
+  "urls": {
+    "app": "/app/?lang=ja"
+  }
+}

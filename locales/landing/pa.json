@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "ਸੰਪਾਦਕ"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "ਚਲਾਓ"
+  },
+  "hero": {
+    "badge": "ਗੋਪਨੀਯਤਾ",
+    "free_badge": "ਮੁਫ਼ਤ",
+    "title_1": "ਚਿੱਤਰ",
+    "title_2": "ਪ੍ਰੋਸੈਸਿੰਗ",
+    "description": "ਸੁਰੱਖਿਅਤ।",
+    "cta_start": "ਸ਼ੁਰੂ",
+    "cta_more": "ਹੋਰ",
+    "features": {
+      "compression": "ਕੰਪਰੈਸ਼ਨ",
+      "resize": "ਆਕਾਰ ਬਦਲੋ",
+      "crop": "ਕ੍ਰੌਪ",
+      "convert": "ਬਦਲੋ",
+      "batch": "ਬੈਚ ਪ੍ਰੋਸੈਸਿੰਗ"
+    }
+  },
+  "templates": {
+    "title_prefix": "ਟੂਲ",
+    "title_gradient": "",
+    "description": "ਸਭ ਕੁਝ।",
+    "item_1_title": "ਕ੍ਰੌਪ",
+    "item_1_desc": "ਸਮਾਰਟ।",
+    "item_2_title": "ਰੋਟੇਸ਼ਨ",
+    "item_2_desc": "ਸਹੀ।",
+    "item_3_title": "ਸਾਈਜ਼",
+    "item_3_desc": "ਵਧੀਆ।"
+  },
+  "privacy": {
+    "title_prefix": "ਡਾਟਾ",
+    "title_highlight": "ਤੁਹਾਡਾ",
+    "title_suffix": "",
+    "description": "ਲੋਕਲ।",
+    "item_1_title": "ਨੋ ਅਪਲੋਡ",
+    "item_1_desc": "ਸੇਫ।",
+    "item_2_title": "ਔਫਲਾਈਨ",
+    "item_2_desc": "ਤੇਜ਼।"
+  },
+  "devices": {
+    "title": "ਹਰ ਥਾਂ",
+    "subtitle": "ਅਨੁਕੂਲਿਤ",
+    "mobile_title": "ਮੋਬਾਈਲ",
+    "mobile_desc": "ਟੱਚ।",
+    "tablet_title": "ਟੈਬਲੇਟ",
+    "tablet_desc": "ਪਾਵਰ।",
+    "laptop_title": "ਡੈਸਕਟਾਪ",
+    "laptop_desc": "ਕੰਟਰੋਲ।"
+  },
+  "performance": {
+    "title_prefix": "ਤੇਜ਼",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "ਲੇਟੈਂਸੀ",
+    "export_label": "ਰੈਜ਼ੋਲਿਊਸ਼ਨ"
+  },
+  "footer": {
+    "title": "ਤਿਆਰ?",
+    "description": "ਸ਼ੁਰੂ ਕਰੋ।",
+    "cta": "ਖੋਲ੍ਹੋ",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "ਵਾਲਪੇਪਰ ਮੋਕਅਪ ਜਨਰੇਟਰ",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/pa/"
+  },
+  "urls": {
+    "app": "/app/?lang=pa"
+  }
+}

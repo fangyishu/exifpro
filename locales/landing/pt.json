@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Image Pro - Editor de Imagem Profissional",
+    "description": "Seguro, rápido e privado.",
+    "keywords": "editor de imagem, recortar, redimensionar, compressão de imagem, processamento em lote, conversor de formato, privacidade"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "Iniciar App"
+  },
+  "hero": {
+    "badge": "Privacidade Primeiro",
+    "free_badge": "100% Grátis",
+    "title_1": "Processamento",
+    "title_2": "de Imagem",
+    "description": "Processamento seguro no cliente.",
+    "cta_start": "Começar",
+    "cta_more": "Mais",
+    "features": {
+      "compression": "Compressão",
+      "resize": "Redimensionar",
+      "crop": "Recortar",
+      "convert": "Converter",
+      "batch": "Processamento em Lote"
+    }
+  },
+  "templates": {
+    "title_prefix": "Ferramentas ",
+    "title_gradient": "Essenciais",
+    "description": "Tudo o que precisa.",
+    "item_1_title": "Recorte",
+    "item_1_desc": "Inteligente.",
+    "item_2_title": "Rotação",
+    "item_2_desc": "Precisa.",
+    "item_3_title": "Redimensionar",
+    "item_3_desc": "Alta qualidade."
+  },
+  "privacy": {
+    "title_prefix": "Seus Dados, ",
+    "title_highlight": "Seu Controle",
+    "title_suffix": "",
+    "description": "Privacidade total.",
+    "item_1_title": "Sem Uploads",
+    "item_1_desc": "Local.",
+    "item_2_title": "Offline",
+    "item_2_desc": "Rápido."
+  },
+  "devices": {
+    "title": "Em todo lugar",
+    "subtitle": "Otimizado",
+    "mobile_title": "Móvel",
+    "mobile_desc": "Toque.",
+    "tablet_title": "Tablet",
+    "tablet_desc": "Poder.",
+    "laptop_title": "Desktop",
+    "laptop_desc": "Precisão."
+  },
+  "performance": {
+    "title_prefix": "Rápido ",
+    "title_gradient": "Performance",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "Latência",
+    "export_label": "Resolução"
+  },
+  "footer": {
+    "title": "Pronto?",
+    "description": "Junte-se a nós。",
+    "cta": "Abrir",
+    "copyright": "© 2024 Image Pro.",
+    "attribution_prefix": "Design",
+    "hosted_on": "GitHub",
+    "more_products": "Mais Produtos",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "Gerador de Mockup de Papel de Parede",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/pt/"
+  },
+  "urls": {
+    "app": "/app/?lang=pt"
+  }
+}

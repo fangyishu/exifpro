@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "संपादक"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "शुरू"
+  },
+  "hero": {
+    "badge": "गोपनीयता",
+    "free_badge": "मुफ़्त",
+    "title_1": "छवि",
+    "title_2": "प्रसंस्करण",
+    "description": "सुरक्षित और तेज़।",
+    "cta_start": "शुरू",
+    "cta_more": "अधिक",
+    "features": {
+      "compression": "संपीड़न",
+      "resize": "आकार बदलें",
+      "crop": "क्रॉप",
+      "convert": "कन्वर्ट",
+      "batch": "बैच प्रोसेसिंग"
+    }
+  },
+  "templates": {
+    "title_prefix": "आवश्यक",
+    "title_gradient": "उपकरण",
+    "description": "सब कुछ।",
+    "item_1_title": "क्रॉप",
+    "item_1_desc": "स्मार्ट।",
+    "item_2_title": "रोटेशन",
+    "item_2_desc": "सटीक।",
+    "item_3_title": "आकार",
+    "item_3_desc": "गुणवत्ता।"
+  },
+  "privacy": {
+    "title_prefix": "डेटा",
+    "title_highlight": "आपका",
+    "title_suffix": "",
+    "description": "स्थानीय।",
+    "item_1_title": "अपलोड नहीं",
+    "item_1_desc": "सुरक्षित।",
+    "item_2_title": "ऑफ़लाइन",
+    "item_2_desc": "तेज़।"
+  },
+  "devices": {
+    "title": "हर जगह",
+    "subtitle": "अनुकूलित",
+    "mobile_title": "मोबाइल",
+    "mobile_desc": "टच।",
+    "tablet_title": "टैबलेट",
+    "tablet_desc": "शक्ति।",
+    "laptop_title": "डेस्कटॉप",
+    "laptop_desc": "नियंत्रण।"
+  },
+  "performance": {
+    "title_prefix": "प्रदर्शन",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "विलंब",
+    "export_label": "रिज़ॉल्यूशन"
+  },
+  "footer": {
+    "title": "तैयार?",
+    "description": "शुरू करें।",
+    "cta": "खोलें",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "वॉलपेपर मॉकअप जेनरेटर",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/hi/"
+  },
+  "urls": {
+    "app": "/app/?lang=hi"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Image Pro",
+    "description": "แก้ไขรูป"
+  },
+  "nav": {
+    "logo_text": "Image Pro",
+    "cta": "เปิด"
+  },
+  "hero": {
+    "badge": "ส่วนตัว",
+    "free_badge": "ฟรี",
+    "title_1": "ประมวลผล",
+    "title_2": "รูปภาพ",
+    "description": "ปลอดภัยและรวดเร็ว",
+    "cta_start": "เริ่ม",
+    "cta_more": "เพิ่มเติม",
+    "features": {
+      "compression": "บีบอัด",
+      "resize": "ปรับขนาด",
+      "crop": "ตัดรูป",
+      "convert": "แปลงไฟล์",
+      "batch": "ประมวลผลแบบกลุ่ม"
+    }
+  },
+  "templates": {
+    "title_prefix": "เครื่องมือ",
+    "title_gradient": "",
+    "description": "ครบครัน",
+    "item_1_title": "ตัด",
+    "item_1_desc": "ฉลาด",
+    "item_2_title": "หมุน",
+    "item_2_desc": "แม่นยำ",
+    "item_3_title": "ขนาด",
+    "item_3_desc": "คุณภาพ"
+  },
+  "privacy": {
+    "title_prefix": "ข้อมูล",
+    "title_highlight": "ของคุณ",
+    "title_suffix": "",
+    "description": "ในเครื่อง",
+    "item_1_title": "ไม่อัปโหลด",
+    "item_1_desc": "ปลอดภัย",
+    "item_2_title": "ออฟไลน์",
+    "item_2_desc": "เร็ว"
+  },
+  "devices": {
+    "title": "ทุกที่",
+    "subtitle": "เหมาะสม",
+    "mobile_title": "มือถือ",
+    "mobile_desc": "สัมผัส",
+    "tablet_title": "แท็บเล็ต",
+    "tablet_desc": "แรง",
+    "laptop_title": "เดสก์ท็อป",
+    "laptop_desc": "ควบคุม"
+  },
+  "performance": {
+    "title_prefix": "เร็ว",
+    "title_gradient": "",
+    "title_suffix": "",
+    "fps_label": "UI",
+    "latency_label": "หน่วง",
+    "export_label": "ละเอียด"
+  },
+  "footer": {
+    "title": "พร้อม?",
+    "description": "เริ่มเลย",
+    "cta": "เปิด",
+    "copyright": "© 2024",
+    "attribution_prefix": "By",
+    "hosted_on": "GitHub",
+    "more_products": "More Products",
+    "cross_link_title": "Wallpaper Pro",
+    "cross_link_desc": "เครื่องสร้างแบบจำลองวอลเปเปอร์",
+    "cross_link_url": "https://wallpaperpro.fandx.vip/th/"
+  },
+  "urls": {
+    "app": "/app/?lang=th"
+  }
+}
