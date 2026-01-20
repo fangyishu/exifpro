@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Box, Paper, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Grid, CircularProgress, TextField, InputAdornment, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import UnfoldLessIcon from '@mui/icons-material/UnfoldLess';
@@ -42,8 +43,8 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
 
         // Check if it's already grouped (keys likely match IFD names or lowercase variants)
         // exifr keys are usually: ifd0, ifd1, exif, gps, interop, etc.
-        const potentialGroups = ['ifd0', 'ifd1', 'exif', 'gps', 'interop', 'xmp', 'icc'];
-        const isGrouped = Object.keys(exifData).some(k => potentialGroups.includes(k) && typeof exifData[k] === 'object');
+        const potentialGroups = ['ifd0', 'ifd1', 'exif', 'gps', 'interop', 'xmp', 'icc', 'iptc'];
+        const isGrouped = Object.keys(exifData).some(k => potentialGroups.includes(k.toLowerCase()) && typeof exifData[k] === 'object');
 
         if (isGrouped) {
             Object.entries(exifData).forEach(([groupName, groupData]) => {
@@ -77,7 +78,7 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
         }
 
         // Sort groups based on standard EXIF order
-        const order = ['IFD0', 'IFD1', 'EXIF', 'GPS', 'INTEROP', 'XMP', 'ICC', 'THUMBNAIL'];
+        const order = ['IFD0', 'IFD1', 'EXIF', 'GPS', 'INTEROP', 'XMP', 'IPTC', 'ICC', 'THUMBNAIL'];
         groups.sort((a, b) => {
             const indexA = order.indexOf(a.name);
             const indexB = order.indexOf(b.name);
@@ -129,6 +130,18 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
                                                     <SearchIcon color="action" />
                                                 </InputAdornment>
                                             ),
+                                            endAdornment: searchQuery ? (
+                                                <InputAdornment position="end">
+                                                    <IconButton
+                                                        aria-label="clear search"
+                                                        onClick={() => setSearchQuery('')}
+                                                        edge="end"
+                                                        size="small"
+                                                    >
+                                                        <ClearIcon fontSize="small" />
+                                                    </IconButton>
+                                                </InputAdornment>
+                                            ) : null,
                                         }}
                                         variant="outlined"
                                     />
@@ -168,8 +181,17 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
                                                         'GPS': 'Location Data',
                                                         'INTEROP': 'Interoperability',
                                                         'XMP': 'Extensible Metadata',
+                                                        'IPTC': 'IPTC Metadata',
                                                         'ICC': 'Color Profile',
-                                                        'THUMBNAIL': 'Thumbnail Data'
+                                                        'THUMBNAIL': 'Thumbnail Data',
+                                                        'DC': 'Dublin Core (XMP)',
+                                                        'PHOTOSHOP': 'Photoshop (XMP)',
+                                                        'TIFF': 'TIFF Tags'
+                                                    };
+
+                                                    const groupDisplayNames: Record<string, string> = {
+                                                        'DC': 'XMP-DC',
+                                                        'PHOTOSHOP': 'XMP-Photoshop',
                                                     };
 
                                                     return (
@@ -185,7 +207,7 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
                                                                         <IconButton size="small" sx={{ mr: 1, p: 0 }}>
                                                                             {collapsedGroups.has(group.name) ? <KeyboardArrowRightIcon fontSize="small" /> : <KeyboardArrowDownIcon fontSize="small" />}
                                                                         </IconButton>
-                                                                        {group.name}
+                                                                        {groupDisplayNames[group.name] || group.name}
                                                                         {groupDescriptions[group.name] && (
                                                                             <Typography variant="caption" sx={{ ml: 1, color: 'text.secondary', fontWeight: 'normal', textTransform: 'none', fontStyle: 'italic' }}>
                                                                                 ({groupDescriptions[group.name]})
@@ -214,10 +236,10 @@ const CenterPanel: React.FC<CenterPanelProps> = ({ activeImage, exifData, loadin
                                                                                         {hexString}
                                                                                     </Typography>
                                                                                 )}
-                                                                                {key}
+                                                                                {groupDisplayNames[group.name] || group.name}:{key}
                                                                             </Box>
                                                                         </TableCell>
-                                                                        <TableCell sx={{ wordBreak: 'break-all', color: 'text.secondary', fontFamily: 'monospace', fontSize: '0.85rem' }}>
+                                                                        <TableCell sx={{ wordBreak: 'break-all', color: 'text.secondary', fontFamily: 'monospace', fontSize: '0.85rem', whiteSpace: 'pre-wrap' }}>
                                                                             {getTagDisplayValue(key, value)}
                                                                         </TableCell>
                                                                     </TableRow>

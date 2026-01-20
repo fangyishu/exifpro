@@ -65,6 +65,7 @@ function App() {
                 ifd1: true, // IFD1 (thumbnail tags)
                 exif: true,
                 gps: true,
+                iptc: true,
                 interop: true,
                 makerNote: false, // often too large/binary
                 mergeOutput: false

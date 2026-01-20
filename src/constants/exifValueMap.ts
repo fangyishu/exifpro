@@ -155,11 +155,49 @@ export const exifValueMaps: Record<string, Record<number, string>> = {
     },
 };
 
+const tryRepairEncoding = (str: string): string => {
+    // 1. Check if string contains only characters <= 255 (latin1 range)
+    // If it has higher code points, it's likely already UTF-8 or another encoding we can't easily guess this way
+    let isLatin1 = true;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) > 255) {
+            isLatin1 = false;
+            break;
+        }
+    }
+
+    if (!isLatin1) return str;
+
+    try {
+        // 2. Convert to Uint8Array (treating as binary/latin1)
+        const bytes = new Uint8Array(str.length);
+        for (let i = 0; i < str.length; i++) {
+            bytes[i] = str.charCodeAt(i);
+        }
+
+        // 3. Attempt to decode as UTF-8
+        const decoded = new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+
+        // 4. If successful, check if it looks "multibyte-ish" (differs from original)
+        // actually if it didn't throw, it IS valid UTF-8.
+        // We prefer the decoded version if it's different (meaning bytes were combined)
+        // or if we just want to force UTF-8 interpretation.
+        return decoded;
+    } catch {
+        // Decoding failed (invalid UTF-8 sequences), return original
+        return str;
+    }
+};
+
 export const getTagDisplayValue = (tag: string, value: any): string => {
     // If not a number, just return stringified
     if (typeof value !== 'number') {
-        const str = String(value);
-        return str;
+        if (typeof value === 'object' && value !== null) {
+            if (value instanceof Date) return value.toLocaleString();
+            return JSON.stringify(value, null, 2);
+        }
+        // Apply encoding repair for strings
+        return tryRepairEncoding(String(value));
     }
 
     if (exifValueMaps[tag] && exifValueMaps[tag][value]) {
